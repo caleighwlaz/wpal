@@ -1,4 +1,4 @@
-//import { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import './App.css';
 import StationHeader from './StationHeader';
 import StreamPlayer from './StreamPlayer';
@@ -6,7 +6,7 @@ import CoverageMap from './CoverageMap';
 
 function App() {
   return(
-    <div>
+    <div className="background">
       <StationHeader 
         stationName="WPAL"
         location="Ocean County, NJ"
