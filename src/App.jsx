@@ -6,7 +6,7 @@ import CoverageMap from './CoverageMap';
 
 function App() {
   return(
-    <div>
+    <div className="background">
       <StationHeader 
         stationName="WPAL"
         location="Ocean County, NJ"
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

@@ -81,6 +81,7 @@ h1 {
     font-size: 36px;
     margin: 20px 0;
   }
+  font-family: "American Typewriter", serif;
 }
 h2 {
   font-size: 24px;
@@ -108,4 +109,39 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.background {
+  background-image: linear-gradient(to bottom right, orange, #ff69b4, yellow, #ff69b4);
+  min-height: 100vh;
+}
+
+.play-button {
+  margin-top: 1rem;
+  background: #cea2fd;
+  color: black;
+  font-size: 1.35rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.play-button:hover { 
+  background: #8968cd; 
+}
+
+.mute-button {
+  margin-top: 1rem;
+  background: #3ded97;
+  color: black;
+  font-size: 1.35rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.mute-button:hover {
+  background: #2fa89b;
 }
