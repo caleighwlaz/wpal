@@ -26,11 +26,11 @@ function StreamPlayer() {
     return(
         <div className="stream-player">
             <audio ref={audioRef} src="https://centova87.shoutcastservices.com/proxy/revolution935/stream" preload="none"/>
-            <button className="play-button" onClick={() => setIsPlaying(!isPlaying)}>
+            <button className="play-button" onClick={() => handlePlayToggle(!isPlaying)}>
                 {isPlaying? <FaPause/> : <FaPlay/>}
                 {isPlaying? "Pause" : "Play"}
             </button>
-            <button className="mute-button" onClick={() => setIsMuted(!isMuted)}>
+            <button className="mute-button" onClick={() => handleMuteToggle(!isMuted)}>
                 {isMuted ? <FaVolumeMute/> : <FaVolumeUp/>}
                 {isMuted ? "Mute" : "Unmute"}
             </button>
